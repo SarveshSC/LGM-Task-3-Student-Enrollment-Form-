@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        Student Enrollment
+    </header>
+    <div class="container">
+        <form action="/" method="get" id="form">
+            <h1>Enrollment Form</h1>
+            <label for="name">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            <br>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <br>
+    
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <br>
+    
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender" name="gender" value="Male" required>
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="gender-female">Female</label>
+            <br>
+
+            <label for="interest">Interested in :</label>
+            <label>
+                <input type="radio" id="interest" name="interest" value="Science" required>Science
+            </label>
+            <label>
+                <input type="radio" id="interest" name="interest" value="Commerce">Commerce
+            </label>
+            <label>
+                <input type="radio" id="interest" name="interest" value="Arts">Arts
+            </label>
+            <br>
+    
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    
+        <table id="table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Interested in</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
